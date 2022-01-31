@@ -9,7 +9,7 @@ A javascript based workday scheduler
 * Javascript
 
 ## Website
-<a href="https://cedean1029.github.io/challenge5workdayscheduler/" target="_blank">Password Generator</a>
+<a href="https://cedean1029.github.io/challenge5workdayscheduler/" target="_blank">Workday Scheduler</a>
 <a href="https://github.com/cedean1029/challenge5workdayscheduler" target="_blank">Git Hub Repository</a>
 
 ## Demo
