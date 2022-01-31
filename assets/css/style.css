@@ -23,6 +23,7 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  color: #000000;
 }
 
 .time-block {
@@ -34,6 +35,7 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  color: #000000;
 }
 
 .hour {
@@ -50,12 +52,12 @@ textarea {
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: #000000;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: #000000;
 }
 
 .saveBtn {
@@ -69,7 +71,12 @@ textarea {
 
 .saveBtn:hover {
   transition: all 0.3s ease-in-out;
-  background-image: linear-gradient(180deg, #06aed5 0%, #05cfae 52%, #2b75ff 90%);
+  background-image: linear-gradient(
+    180deg,
+    #06aed5 0%,
+    #05cfae 52%,
+    #2b75ff 90%
+  );
 }
 
 .deleteBtn {
@@ -83,5 +90,10 @@ textarea {
 
 .deleteBtn:hover {
   transition: all 0.3s ease-in-out;
-  background-image: linear-gradient(180deg, #d53606 0%, #d19106 52%, #bbe407 90%);
+  background-image: linear-gradient(
+    180deg,
+    #d53606 0%,
+    #d19106 52%,
+    #bbe407 90%
+  );
 }
