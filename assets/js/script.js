@@ -27,32 +27,21 @@ function loadHours() {
 function auditHours() {
     // get hour from task element
     var timeName = $(".hour").text();
-    var currentTime = moment(timeName, "L").set("hour", 09);
+    var currentTime = moment().format("H");
     console.log(timeName);
     console.log(currentTime);
 
-    for (var i = 0; i <= 8; i++) {
-        console.log($("#"+i).previousElementSibling.value());
-        
+    for (var i = 9; i <= 17; i++) {
+        if (parseInt($("#"+i)[0].id) < currentTime) {
+            $("#"+i).addClass("past")
+        };
+        if ($("#"+i)[0].id == currentTime) {
+            $("#"+i).addClass("present")
+        };
+        if ($("#"+i)[0].id > currentTime) {
+            $("#"+i).addClass("future")
+        };
     };
-
-
-    //   .find("span")
-    //   .text()
-    //   .trim();
-
-    // // convert to moment object at 5:00pm
-    // var time = moment(date, "L").set("hour", 17);
-
-    // // remove any old classes from element
-    // $(taskEl).removeClass("list-group-item-warning list-group-item-danger");
-
-    // // apply new class if task is near/over due date
-    // if (moment().isAfter(time)) {
-    //   $(taskEl).addClass("list-group-item-danger");
-    // } else if (Math.abs(moment().diff(time, "days")) <= 2) {
-    //   $(taskEl).addClass("list-group-item-warning");
-    // }
 };
 
 loadHours();
