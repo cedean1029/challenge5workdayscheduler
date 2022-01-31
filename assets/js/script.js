@@ -17,11 +17,11 @@ $(".textarea").on("click", "p", function () {
 // });
 
 function save(e) {
-    console.log($(e.target).parent()[0].previousElementSibling.value);
-    console.log($(e.target).parent()[0].previousElementSibling.id);
+    console.log(e.target.parentElement.previousElementSibling.value);
+    console.log(e.target.parentElement.previousElementSibling.id);
 
-    var text = $(e.target).parent()[0].previousElementSibling.value;
-    var id = $(e.target).parent()[0].previousElementSibling.id;
+    var text = e.target.parentElement.previousElementSibling.value;
+    var id = e.target.parentElement.previousElementSibling.id;
 
     localStorage.setItem(id, text);
 }
