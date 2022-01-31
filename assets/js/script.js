@@ -1,10 +1,10 @@
 var hours = {}
 
-$(".textarea").on("click", "p", function () {
-    var textInput = $("<textarea>").addClass("description").val(text);
-    $(this).replaceWith(textInput);
-    console.log(textInput)
-})
+// $(".textarea").on("click", "p", function () {
+//     var textInput = $("<textarea>").addClass("description").val(text);
+//     $(this).replaceWith(textInput);
+//     console.log(textInput)
+// })
 
 // $(".fa-save").on("click", function (event) {
 //     console.log($(event.target).parent()[0].previousElementSibling.value);
