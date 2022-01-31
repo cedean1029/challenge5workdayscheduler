@@ -34,11 +34,11 @@ function auditHours() {
     for (var i = 9; i <= 17; i++) {
         if (parseInt($("#"+i)[0].id) < currentTime) {
             $("#"+i).addClass("past")
-        };
-        if ($("#"+i)[0].id == currentTime) {
+        }
+        else if ($("#"+i)[0].id == currentTime) {
             $("#"+i).addClass("present")
-        };
-        if ($("#"+i)[0].id > currentTime) {
+        }
+        else if ($("#"+i)[0].id > currentTime) {
             $("#"+i).addClass("future")
         };
     };
