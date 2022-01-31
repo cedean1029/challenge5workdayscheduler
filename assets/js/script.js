@@ -6,15 +6,25 @@ $(".textarea").on("click", "p", function () {
     console.log(textInput)
 })
 
-$(".fa-save").on("click", function (event) {
-    console.log($(event.target).parent()[0].previousElementSibling.value);
-    console.log($(event.target).parent()[0].previousElementSibling.id);
+// $(".fa-save").on("click", function (event) {
+//     console.log($(event.target).parent()[0].previousElementSibling.value);
+//     console.log($(event.target).parent()[0].previousElementSibling.id);
 
-    var text = $(event.target).parent()[0].previousElementSibling.value;
-    var id = $(event.target).parent()[0].previousElementSibling.id;
+//     var text = $(event.target).parent()[0].previousElementSibling.value;
+//     var id = $(event.target).parent()[0].previousElementSibling.id;
+
+//     localStorage.setItem(id, text);
+// });
+
+function save(e) {
+    console.log($(e.target).parent()[0].previousElementSibling.value);
+    console.log($(e.target).parent()[0].previousElementSibling.id);
+
+    var text = $(e.target).parent()[0].previousElementSibling.value;
+    var id = $(e.target).parent()[0].previousElementSibling.id;
 
     localStorage.setItem(id, text);
-});
+}
 
 function loadHours() {
     var messages = Object.entries(localStorage);
