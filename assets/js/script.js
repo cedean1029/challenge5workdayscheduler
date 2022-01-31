@@ -26,13 +26,13 @@ function auditHours() {
     for (var i = 9; i <= 17; i++) {
         var id = document.getElementById(i)
         if (i < currentTime) {
-            id.setAttribute("class", "past") 
+            id.setAttribute("class", "col-12 col-lg-9 past") 
         }
         else if (i == currentTime) {
-            id.setAttribute("class", "present") 
+            id.setAttribute("class", "col-12 col-lg-9 present") 
         }
         else if (i > currentTime) {
-            id.setAttribute("class", "future") 
+            id.setAttribute("class", "col-12 col-lg-9 future") 
         };
     };
 };
